@@ -1,0 +1,1 @@
+select datname,trunc(((blks_hit::numeric)/(blks_read::numeric+blks_hit::numeric))*100, 2) as hit_rate from pg_stat_database where datname = '<DATABASE_NAME>';

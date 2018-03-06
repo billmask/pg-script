@@ -1,0 +1,1 @@
+select pg_size_pretty(max(bufferid::bigint)*8192::bigint) as "Buffer Size" from pg_buffercache;
